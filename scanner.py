@@ -1,12 +1,12 @@
 import shodan
-from modules.geo_mapper import generate_map
-from modules.cve_checker import check_vulns
-from modules.cert_parser import extract_cert_info
-from modules.passive_dns import get_passive_dns
-from utils.risk_score import assign_risk_score
-from utils.report_writer import write_report
+from geo_mapper import generate_map
+from cve_checker import check_vulns
+from cert_parser import extract_cert_info
+from passive_dns import get_passive_dns
+from risk_score import assign_risk_score
+from report_writer import write_report
 
-API_KEY = "YOUR_SHODAN_API_KEY"
+API_KEY = "YOUR_SHODAN_API_KEY"  # Replace this with your actual key
 KEYWORDS = ["vsat", "satellite uplink", "iDirect", "norsat", "comtech"]
 
 api = shodan.Shodan(API_KEY)
@@ -37,8 +37,7 @@ for keyword in KEYWORDS:
             }
             all_results.append(device_info)
     except Exception as e:
-        print(f"Error scanning {keyword}: {e}")
+        print(f"❌ Error scanning {keyword}: {e}")
 
 write_report(all_results)
 generate_map(all_results)
-
