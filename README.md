@@ -1,16 +1,18 @@
-🛰️ SatRecon: Satellite Risk Mapping via OSINT
+🛰️ SatReconX — Satellite OSINT Recon Scanner
 
-A Python tool that uses the Shodan API to identify exposed satellite infrastructure (like VSATs, modems, uplinks) and generate a professional report in PDF and CSV format.
+SatReconX is an advanced Open Source Intelligence (OSINT) tool designed to scan, assess, and report vulnerabilities in publicly exposed satellite communication infrastructure.
 
 ---
 
-## 🔧 Features
+## 🔍 Features
 
-- Searches Shodan for 10+ satellite-related keywords
-- Extracts IP, country, organization, port, protocol, and banner info
-- Exports data to:
-  - 📁 `satellite_report.csv`
-  - 📄 `satellite_osint_report.pdf`
+- Shodan-based scanning for satellite-related devices
+- CVE vulnerability extraction
+- SSL certificate analysis
+- Risk scoring of targets
+- Passive DNS linking
+- Interactive map visualization (using Folium)
+- JSON + CSV reports
 
 ---
 
