@@ -1,10 +1,10 @@
-🛰️ SatReconX — Satellite OSINT Recon Scanner
+ SatReconX — Satellite OSINT Recon Scanner
 
 SatReconX is an advanced Open Source Intelligence (OSINT) tool designed to scan, assess, and report vulnerabilities in publicly exposed satellite communication infrastructure.
 
 ---
 
-## 🔍 Features
+## Features
 
 - Shodan-based scanning for satellite-related devices
 - CVE vulnerability extraction
@@ -16,7 +16,7 @@ SatReconX is an advanced Open Source Intelligence (OSINT) tool designed to scan,
 
 ---
 
-## 🚀 How to Use
+##  How to Use
 
 1. Clone This Repo
    git clone https://github.com/Forensonaut/SatRecon
